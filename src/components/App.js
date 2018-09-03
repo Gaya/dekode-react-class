@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import QuestionsList from './QuestionsList';
-import QuestionForm from './QuestionForm';
 import Assignments from './Assignments';
 
 import './App.css';
@@ -14,22 +12,6 @@ class App extends Component {
     ],
   };
 
-  addQuestion = (question) => {
-    const { questions } = this.state;
-
-    this.setState({
-      questions: [...questions, question],
-    });
-  };
-
-  removeQuestion = (index) => {
-    const { questions } = this.state;
-
-    this.setState({
-      questions: questions.filter((item, itemIndex) => itemIndex !== index),
-    });
-  };
-
   render() {
     const { questions } = this.state;
 
@@ -40,11 +22,6 @@ class App extends Component {
         </header>
 
         <div className="App-container">
-          <QuestionForm onAddQuestion={this.addQuestion} />
-          <QuestionsList
-            questions={questions}
-            onRemoveQuestion={this.removeQuestion}
-          />
           <Assignments />
         </div>
       </div>
