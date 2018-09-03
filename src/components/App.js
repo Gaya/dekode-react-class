@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-import Assignments from './Assignments';
 import QuestionsList from './QuestionsList';
+import QuestionForm from './QuestionForm';
+import Assignments from './Assignments';
 
 import './App.css';
 
@@ -23,6 +24,7 @@ class App extends Component {
         </header>
 
         <div className="App-container">
+          <QuestionForm />
           <QuestionsList questions={questions} />
           <Assignments />
         </div>

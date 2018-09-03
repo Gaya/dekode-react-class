@@ -1,0 +1,18 @@
+.QuestionForm {
+    background: #eee;
+    padding: 20px;
+    display: flex;
+}
+
+.QuestionForm input,
+.QuestionForm button {
+    font-size: x-large;
+}
+
+.QuestionForm input {
+    flex-grow: 1;
+}
+
+.QuestionForm button {
+    margin-left: 10px;
+}

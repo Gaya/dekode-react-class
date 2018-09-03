@@ -10,7 +10,7 @@ class QuestionsList extends Component {
 
     return (
       <ul className="QuestionsList">
-        {questions.map(question => <Question question={question} />)}
+        {questions.map((question, index) => <Question key={index} question={question} />)}
       </ul>
     );
   }
