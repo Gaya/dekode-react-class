@@ -18,21 +18,21 @@ class Assignments extends Component {
         <h2>Third assignment (BONUS!):</h2>
         <p>
           Make some UX improvements:
-          <ul>
-            <li>
-              Clear question input when adding.
-            </li>
-            <li>
-              Press "return" to add question.
-            </li>
-            <li>
-              Remove questions.
-            </li>
-            <li>
-              Edit questions.
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Clear question input when adding.
+          </li>
+          <li>
+            Press "return" to add question.
+          </li>
+          <li>
+            Remove questions.
+          </li>
+          <li>
+            Edit questions.
+          </li>
+        </ul>
       </div>
     );
   }
