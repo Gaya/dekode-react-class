@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Assignments from './Assignments';
+import QuestionsList from './QuestionsList';
 
 import './App.css';
 
@@ -13,6 +14,8 @@ class App extends Component {
   };
 
   render() {
+    const { questions } = this.state;
+
     return (
       <div className="App">
         <header className="App-header">
@@ -20,6 +23,7 @@ class App extends Component {
         </header>
 
         <div className="App-container">
+          <QuestionsList questions={questions} />
           <Assignments />
         </div>
       </div>
