@@ -24,6 +24,6 @@ $ npm install
 $ npm start
 ```
 
-6. Go to [http://localhost:3000](http://localhost:3000)
+6. Go to [http://localhost:3000](http://localhost:3000) (Opens automatically)
 
 7. Do assignment!
