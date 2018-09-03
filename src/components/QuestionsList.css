@@ -8,3 +8,11 @@
     padding: 8px 5px;
     border-bottom: 1px solid #666;
 }
+
+.QuestionsList button {
+    font-size: x-large;
+    border: 0;
+    background-color: red;
+    color: white;
+    float: right;
+}

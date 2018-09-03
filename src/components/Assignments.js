@@ -12,8 +12,18 @@ class Assignments extends Component {
         <h2>Second assignment:</h2>
         <p>
           Create a form with input which communicates adding a question through the App component.
-          (1. App passes callback to form, 2. form calls callback with new question, 3. App adds question to state)
         </p>
+        <ol>
+          <li>
+            App passes callback to form
+          </li>
+          <li>
+            Form calls callback with new question
+          </li>
+          <li>
+            App adds question to state
+          </li>
+        </ol>
 
         <h2>Third assignment (BONUS!):</h2>
         <p>
@@ -28,9 +38,6 @@ class Assignments extends Component {
           </li>
           <li>
             Remove questions.
-          </li>
-          <li>
-            Edit questions.
           </li>
         </ul>
       </div>

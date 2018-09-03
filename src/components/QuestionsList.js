@@ -6,11 +6,19 @@ import './QuestionsList.css';
 
 class QuestionsList extends Component {
   render() {
-    const { questions } = this.props;
+    const { questions, onChangeQuestion, onRemoveQuestion } = this.props;
 
     return (
       <ul className="QuestionsList">
-        {questions.map((question, index) => <Question key={index} question={question} />)}
+        {questions.map((question, index) => (
+          <Question
+            key={index}
+            index={index}
+            question={question}
+            onChangeQuestion={onChangeQuestion}
+            onRemoveQuestion={onRemoveQuestion}
+          />
+        ))}
       </ul>
     );
   }

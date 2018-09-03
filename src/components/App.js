@@ -22,6 +22,14 @@ class App extends Component {
     });
   };
 
+  removeQuestion = (index) => {
+    const { questions } = this.state;
+
+    this.setState({
+      questions: questions.filter((item, itemIndex) => itemIndex !== index),
+    });
+  };
+
   render() {
     const { questions } = this.state;
 
@@ -33,7 +41,10 @@ class App extends Component {
 
         <div className="App-container">
           <QuestionForm onAddQuestion={this.addQuestion} />
-          <QuestionsList questions={questions} />
+          <QuestionsList
+            questions={questions}
+            onRemoveQuestion={this.removeQuestion}
+          />
           <Assignments />
         </div>
       </div>
