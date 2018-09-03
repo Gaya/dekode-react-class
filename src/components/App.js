@@ -14,6 +14,14 @@ class App extends Component {
     ],
   };
 
+  addQuestion = (question) => {
+    const { questions } = this.state;
+
+    this.setState({
+      questions: [...questions, question],
+    });
+  };
+
   render() {
     const { questions } = this.state;
 
@@ -24,7 +32,7 @@ class App extends Component {
         </header>
 
         <div className="App-container">
-          <QuestionForm />
+          <QuestionForm onAddQuestion={this.addQuestion} />
           <QuestionsList questions={questions} />
           <Assignments />
         </div>

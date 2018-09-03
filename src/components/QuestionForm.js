@@ -19,7 +19,7 @@ class QuestionForm extends Component {
     const { question } = this.state;
     const { onAddQuestion } = this.props;
 
-    if (typeof onAddQuestion === 'function') {
+    if (typeof onAddQuestion === 'function' && question.trim() !== '') {
       onAddQuestion(question);
     }
 
